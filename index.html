@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dental Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e751e2a35d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><a href="#">Dental Clinic</a></div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="home" id="home">
+      <div id="motto">
+        <div>
+          <h3>Get Quick</h3>
+          <h3>Dental Services</h3>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium dolore sunt eveniet repellendus quibusdam eaque, voluptates dicta autem, expedita earum ipsum fuga perferendis nam ipsa impedit adipisci et! Est.</p>
+        </div>
+      <div id="buttons">
+        <button>Login</button>
+        <button>Sign Up</button>
+      </div>
+      </div>
+    </section>
+    <section id="aboutus" class="aboutus">
+      <div class="about" id="abt1">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde fugit necessitatibus quam. Unde nobis sint inventore eveniet tempore voluptatum, optio illo pariatur earum labore cum esse consectetur hic perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime explicabo sunt sed, provident ut est exercitationem sit quas officiis deleniti recusandae commodi qui. Voluptas nam tempore quae laudantium odit.</p>
+        <a href="#contact">LEARN MORE</a>
+      </div>
+      <div class="about" id="abt2">
+        <div class="abts">
+          <h1>01</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor itaque optio repellat quia, quam, eum sint eaque, tenetur magni aut minima molestias a? Veniam saepe nemo perspiciatis magnam, recusandae rem?</p>
+        </div>
+        <div class="abts">
+          <h1>02</h1>
+          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor itaque optio repellat quia, quam, eum sint eaque, tenetur magni aut minima molestias a? Veniam saepe nemo perspiciatis magnam, recusandae rem?</p> -->
+          <p>Dolor itaque optio repellat quia, quam, eum sint eaque, tenetur magni aut minima molestias a?</p>
+        </div>
+        <div class="abts">
+          <h1>03</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor itaque optio repellat quia, quam, eum sint eaque, tenetur magni aut minima molestias a? Veniam saepe nemo perspiciatis magnam, recusandae rem?</p>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <h1>Our Services</h1>
+      <div id="fAndS">
+        <div class="fAndS">
+          <i class="fa-solid fa-tooth" style="font-size: 100px; color: #2E927A;"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, natus provident. Distinctio necessitatibus non quis, voluptates quibusdam corporis alias ea! Amet perspiciatis eos delectus sequi itaque rerum perferendis molestias nobis.</p>
+          <div>
+            <a href="#services">MORE</a>
+          </div>
+        </div>
+        <div class="fAndS">
+          <i class="fas fa-teeth" style="font-size: 100px; color: #2E927A;"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, natus provident. Distinctio necessitatibus non quis, voluptates quibusdam corporis alias ea! Amet perspiciatis eos delectus sequi itaque rerum perferendis molestias nobis.</p>
+          <div>
+            <a href="#services">MORE</a>
+          </div>
+        </div>
+        <div class="fAndS">
+          <i class="fas fa-wand-magic-sparkles" style="font-size: 100px; color: #2E927A;"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, natus provident. Distinctio necessitatibus non quis, voluptates quibusdam corporis alias ea! Amet perspiciatis eos delectus sequi itaque rerum perferendis molestias nobis.</p>
+          <div>
+            <a href="#services">MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div id="getInTouch">
+        <div>
+          <h2>GET IN TOUCH</h2>
+          <h3>Hey! We are looking forward to hear from you!</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur aspernatur, accusamus, expedita laborum asperiores, harum sapiente ipsa obcaecati corrupti corporis. Pariatur, alias. Incidunt ex cum, et molestiae aliquam omnis!</p>
+        </div>
+      </div>
+      <div id="contactFields">
+        <div id="contactForm">
+          <input type="text" name="name" id="name" placeholder="Enter your name"> <br>
+          <input type="email" name="email" id="email" placeholder="Enter your email"> <br>
+          <textarea name="message" id="message" cols="25" rows="10" placeholder="Enter your message"></textarea> <br>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let section = document.querySelectorAll('section');
+      let navLinks = document.querySelectorAll('nav a')
+
+      window.onscroll = () => {
+          section.forEach(sec => {
+              let top = window.scrollY;
+              let offset = sec.offsetTop - 150;
+              let height = sec.offsetHeight;
+              let id = sec.getAttribute('id');
+
+              if (top >= offset && top < offset + height) {
+                  navLinks.forEach(links => {
+                      links.classList.remove('active');
+                      document.querySelector('nav a[href*=' + id + ']').classList.add('active');
+                  })
+              }
+          });
+      };
+    </script>
+  </body>
+</html>

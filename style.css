@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: #58c1f1;
+}
+html::-webkit-scrollbar-thumb {
+  background: #0b2564;
+}
+section {
+  min-height: 100vh;
+  padding-top: 80px!important;
+  font-size: 15px;
+}
+nav{
+  position: fixed;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+nav .logo a {
+  font-size: 3vmax;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0e2431;
+}
+nav .logo a:hover {
+  color: #1C75D1;
+  cursor: pointer;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #0e2431;
+  text-decoration: none;
+  font-size: 2.5vmin;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #fff;
+  background: #1C75D1;
+}
+nav .menu-btn i{
+  color: #0e2431;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+/* home section */
+#home {
+  /* background-color: #fff; */
+  background-image: url("./assets/images/smile.jpg");
+  background-image: url("https://www.omnidental.com.sg/wp-content/uploads/Cosmetic-Dentistry.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#motto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  padding-left: 75px;
+  font-size: 4vmax;
+  width: 50vw;
+}
+#motto h3:nth-child(2) {
+  color: #1C75D1;
+}
+#motto p {
+  font-size: 2.5vmin;
+}
+#buttons button {
+  font-size: 2.5vmin;
+  font-weight: 600;
+  color: #1b1b1b;
+  padding: 10px 20px;
+  border: 2px solid #1C75D1;
+  border-radius: 10px;
+}
+#buttons button:hover,
+#buttons button:active {
+  background-color: #1C75D1;
+  color: #fff;
+}
+#abt1 {
+  padding: 0 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#abt1 h1 {
+  font-size: 4vmax;
+}
+#abt1 p {
+  width: 50vw;
+  font-size: 2.5vmin;
+}
+#abt1 a {
+  width: max-content;
+  padding: 10px 30px;
+  background-color: #1C486E;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 2vmin;
+  color: #EDF3FB;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+#abt1 a:hover {
+  background-color: #EDF3FB;
+  color: #1C486E;
+}
+#contact {
+  background-color: #3255A5;
+  display: flex;
+  padding: 0 75px;
+}
+/* #contactFields {
+  padding-bottom: 80px;
+} */
+#getInTouch {
+  background-color: #3255A5;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  min-width: 60%;
+}
+#getInTouch h2 {
+  font-size: 3vmax;
+}
+#getInTouch h3 {
+  font-size: 3vmin;
+}
+#getInTouch p {
+  font-size: 2vmin;
+}
+.contact div input, .contact div textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #e5eefb;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  max-width: 100%;
+  font-size: 2vmin;
+}
+
+.contact div button {
+  padding: 5px 15px;
+  min-width: max-content;
+  background-color: #3255A5;
+  border: #3255A5 solid 1px;
+  color: #fff;
+  border: none;
+  border-radius: 1.5625rem;
+  transition: 0.3s ease;
+  font-size: 2vmin;
+}
+
+.contact div button:hover {
+  background-color: #fff;
+  color: #3255A5;
+  border: #3255A5 solid 1px;
+}
+
+
+.contact #contactFields, #getInTouch {
+  width: 50vw;
+  padding: 30px;
+}
+
+#contactForm {
+  box-shadow: 0 8px 16px rgba(17, 6, 71, 0.671);
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 50vw;
+  /* min-width: 75vw; */
+}
+#contactFields {
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40%;
+}
+/* about us section */
+#aboutus {
+  background-color: #fff;
+  background-image: url(./assets/images/dental.jpg);
+  background-image: url(https://images.unsplash.com/photo-1520013573795-38516d2661e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1236&q=80assets/images/dental.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about:nth-child(1) {
+  min-height: 65vh;
+}
+.about:nth-child(2) {
+  padding: 0 75px;
+  min-height: 35vh;
+}
+.abts {
+  flex-basis: 100%;
+  font-size: 2vmin;
+  box-shadow: 2px 0px 4px 3px rgb(0 0 0 / 20%);
+}
+#abt2 {
+  display: flex;
+  column-gap: 20px;
+}
+.abts:nth-child(1) {
+  background-color: #85B5E3;
+  color: #EDF3FB;
+}
+.abts:nth-child(2) {
+  background-color: #EDF3FB;
+  color: #1C486E;
+}
+.abts:nth-child(3) {
+  background-color: #1C486E;
+  color: #EDF3FB;
+}
+.abts {
+  padding: 20px;
+  height: inherit;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  border-radius: 20px 20px 0 0;
+}
+/* services */
+#services {
+  background-color: #C8E7DF;
+  padding: 75px 15px 15px 15px;
+}
+.services h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 4vmax;
+  color: #2E927A;
+  margin-bottom: 15px;
+}
+#fAndS {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 0 75px;
+}
+.fAndS {
+  padding: 20px;
+  background-color: #FEFEFE;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(146, 161, 176, 0.3);
+  flex-basis: 100%;
+}
+.fAndS h3 {
+  color: #2E927A;
+  margin-top: 15px;
+  font-size: 3vmin;
+}
+.fAndS p {
+  margin: 15px 0;
+  font-size: 2vmin;
+}
+.fAndS div a{
+  background-color: #2E927A;
+  width: max-content;
+  padding: 5px 30px;
+  font-size: 2vmin;
+  color: #EDF3FB;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 3px 2px rgba(146, 161, 176, 0.3);
+}
+.fAndS div a:hover {
+  background-color: #C8E7DF;
+  color: #2E927A;
+  border: #2E927A solid 1px;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    overflow: scroll;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: #1C75D1;
+  }
+  /* motto */
+  #motto p {
+    font-size: 15px;
+    width: 50vw;
+  }
+  /* about us */
+  #abt2 {
+    display: block;
+    padding: 15px;
+  }
+  .abts {
+    height: max-content;
+  }
+  #abt1 {
+    padding: 0 40px;
+    margin: 0 40px;
+  }
+  #abt1 p {
+    width: 75vw;
+  }
+  .abts:nth-child(2) {
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
+  }
+  .abts {
+    border-radius: 20px;
+    margin: 0 40px;
+  }
+  /* services */
+  
+  #fAndS {
+    display: block;
+    margin: 0 40px;
+  }
+  .fAndS:nth-child(2) {
+    margin: 15px 0;
+  }
+  /* contact us */
+    #contact {
+    /* display: block; */
+    flex-direction: column;
+  }
+  #contactForm {
+    min-width: 75vw;
+  }
+  #contactFields {
+    margin-bottom: 30px;
+  }
+  .contact #getInTouch, #contactFields {
+    width: 100%;
+  }
+  #contactFields {
+    min-height: 60vh;
+    align-self: center;
+  }
+  #getInTouch {
+    min-height: 40vh;
+    padding-bottom: 50px;
+  }
+  #contact {
+    padding: 0 40px;
+  }
+}
